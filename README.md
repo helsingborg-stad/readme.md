@@ -51,8 +51,8 @@ sequenceDiagram
 
     Frontend->>+Service: POST {user_id, endUserIp}
     Service->>+Third Party: POST {user_id, endUserIp}
-    Third Party-->>-Service: {orderRef, autoStartToken, qrStartSecret}
-    Service-->>-Frontend: {orderRef, autoStartToken, qrStartSecret}
+    Third Party-->>-Service: {orderRef, qrStartSecret}
+    Service-->>-Frontend: {orderRef, qrStartSecret}
 ```
 
 
