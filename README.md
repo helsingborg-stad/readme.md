@@ -12,7 +12,7 @@
 </p>
 <h1>README.md</h1>
 <p>
-  README.md Boilerplate for helsingborg stad projects.
+  README.md boilerplate for helsingborg stad projects.
   <br />
   <a href="https://github.com/helsingborg-stad/readme.md/issues">Report Bug</a>
   ·
@@ -25,15 +25,15 @@ A boilerplate for Helsingborg Stad open source github projects.
 
 
 ## Instructions
-- Copy files in this repo into your repository and do a search and replace in the README.md for `readme.md` and replace with `{your repository name}`.
-- Keep the header and everything below the License sub header.
+- Copy files in this repository into your repository and do a search and replace in the README.md for `readme.md` and replace with `{your repository name}`.
+- Keep the header and everything below the License sub header as a footer.
 - Put image files referenced in README.md inside `docs/images` folder.
 - Make sure the main/master branch is correct in the license-url for the license shield to work correctly.
 
 
 ## Tips
 - Avoid creating a "Table of Contents" as it is cumbersome to update and rarely needed in a short descriptive README.md
-- Keep it technical if the target audience is developer. less images, more to the "get this up and running fast".
+- Keep it technical if the target audience is developer, less images, more to the "get this up and running fast".
 
 
 ## Examples 
@@ -51,8 +51,8 @@ sequenceDiagram
 
     Frontend->>+Service: POST {user_id, endUserIp}
     Service->>+Third Party: POST {user_id, endUserIp}
-    Third Party-->>-Service: {orderRef, autoStartToken, qrStartToken, qrStartSecret}
-    Service-->>-Frontend: {orderRef, autoStartToken, qrStartToken, qrStartSecret}
+    Third Party-->>-Service: {orderRef, autoStartToken, qrStartSecret}
+    Service-->>-Frontend: {orderRef, autoStartToken, qrStartSecret}
 ```
 
 
